@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript Interview Questions
+    </title>
+</head>
+
+<body>
+
+    <!-- JavaScript Interview Questions  -->
+    <script>
+
+      // while("a"== "a"){
+      //   console.log("Hello World")
+      // }
+      // // Code run Infinetly
+
+
+    //   while("a"== "a"){
+    //  console.log('tarun')
+    //  "a++"
+    //   }
+    //   // Code run Infinetly
+
+
+// ++++++++++++++++Short Circuit +++++++++++++++++++++++
+
+
+// ++++++++++++++++|| Or +++++++++++++++++++++++
+
+// const a1 = 'Tarun' || ""
+// console.log(a1)
+
+
+// const a1 = '' || 2
+// const a1 = false || 2
+// const a1 = null || 2
+// const a1 = null || undefined|| "Tarun"
+// const a1 = null || "" || "tarun"  || 2
+
+// console.log(a1)
+
+// ++++++++++++++++ && and +++++++++++++++++++++++
+
+// const a2 = 'Tarun' && 1
+// const a2 = '' && 1
+
+// const a2 = null && 1
+// const a2 = 'Tarun' && null
+// const a2 = 'Tarun' && 2
+// const a2 = false && 20 && "Tarun"
+// const a2 = 'Tarun' && 100 && null
+
+
+// console.log(a2)
+
+
+
+// const name1 = false ||"User1" ||"User2";
+// const name2 =  null  && "User1"  && "User2" 
+
+// console.log(name1, name2)
+
+
+
+
+// =================================================
+
+
+// var Hello =  function sum(a,b){
+//   return a +b
+// }
+
+// console.log(Hello(2,3))
+
+
+
+// var Hello = function sum(a,b){
+//   return a +b
+// }
+
+// console.log(Hello(2,2))
+
+
+// console.log(myFunction()); 
+// // This works because the variable declaration is hoisted.
+
+// var myFunction = function() {
+//   return "Hello, world!";
+// };
+
+
+
+        // <!-- Q-1 -->
+
+        // var  a=10;
+        // var a =100;
+        // console.log(a);
+
+        // let b =20;
+
+        // console.log(b);
+
+        // const c=7;
+        // console.log(c);
+
+      // var a = 1
+      
+      //  a++
+      
+      // console.log(a)
+
+      // var a = 100
+      // ++a  // a = 1+a
+      // console.log(a)
+      
+      // a++ // a = a+1
+      // console.log(a)
+
+        // <!-- Q-2 -->
+
+        // let num1 = 10;
+        // {
+        //     let num2=20;
+        // {
+        //     let num1=30;
+        //     console.log(num1+num2);
+        // }
+        //     console.log(num1+num2);
+        // }
+
+        // <!-- Q-3 -->
+
+        // var a =10;
+        // console.log(a=20);
+
+        // var b= a= 20;
+        // console.log(a+b);
+
+        // replace the value of a by 20
+
+
+        // <!-- Q-4 -->
+
+                // console.log("1"+2+3+4+5);
+                // console.log(1+2+3+4+"5");
+                // console.log(1+2+"3"+4+5);
+        //         console.log("100"-5);
+                // console.log(400*"4");
+                // console.log("2"+ 4 *100);
+                // console.log(30 /"2" + 10);
+                // console.log(3+31-"1")
+                // console.log(102+8+'10')
+        // console.log('10'+1000)
+// var a =6
+// var b =4
+// var c=2
+
+
+// d = a+b*a/c-b
+// //  6+4*3-4
+// //  6+12-4
+// //  18-4
+// //14
+
+// console.log(d)
+
+        // console.log(100-"10")
+
+        // console.log("10"-100)
+
+        // console.log(1000/"2")
+
+        // console.log("100"*2)
+        // console.log(100*"9")
+
+        // console.log('10'/2)
+        // console.log(8900-1+1000)
+        // console.log("12232"*100+120)
+
+
+        // <!-- Q-5 -->
+
+        // var num=20;
+        // value = typeof num;
+        // // console.log(value);
+        // console.log(typeof value);
+
+        // console.log(typeof("4"+ "7"));
+
+        // var b = 1;
+        // var a=b = typeof a;
+        // console.log(a);
+
+        // ---For  of loop --for reference- only--------------------------------------//
+
+        // function sum(arr) {
+
+        //     let sum = 0;
+
+        //     for (let value of arr) {
+        //      sum += value
+        //     }
+        //     return sum;
+        // }
+        // const result = sum([2, 4, 5, 6,100]);
+        // console.log(result)
+
+        // --------------------------------------------//
+
+
+        // <!-- Q-6 -->
+
+        // let student= "Tarun";
+        // let boy = "Dhaval"
+        // let girl = "demo"
+
+        // console.log(` hello ${1}`);
+
+        // console.log(`hello ${"student"}`);
+
+        // console.log(`hello ${student}, ${boy} and ${girl}`);
+
+        // <!-- Q-7 -->
+
+        // let x, y, z;
+        // x = y = z = 6 +6;
+        // console.log(x);
+        // console.log(y);
+        // console.log(z);
+
+
+        // <!-- Q-8 -->
+
+        // console.log(5**2);
+
+        // console.log(5**3);
+
+
+        // <!-- Q-9 -->
+
+        // let num=15;
+        // let a = ++num;
+
+        // console.log(a);
+
+        // let num1 = 0;
+        // let b = num1++;
+
+        // console.log(num1);
+
+        // let num2 = 0;
+        //  num2++;
+        //  ++num2;
+
+        // console.log(num2);
+
+
+        // <!-- Q-10 -->
+
+        // console.log("Z">"A");
+        // console.log("A"> "a");
+
+        // console.log("Tom"> "Tommy");
+
+        // console.log("Meet"> "Met")
+
+
+
+        // <!-- Q-11 -->
+
+        // console.log("Var");
+        // for(let j =0; j<=2; j++){
+        //     console.log(j);
+
+        // }
+
+        // console.log("let");
+        // for(let i =0; i<=5; i++){
+        // console.log(i);
+        // }
+
+        // <!-- Q-12 -->
+
+        // var num1 =2;
+        // var num2=20;
+        // var num3= --num1+num2; //num= num-1 + num2 = 1+20
+        // console.log(num3);
+
+
+        // var num4 =num1+num2;
+        // console.log(num3);
+        // console.log(num4);
+
+        // var num1 = 2;
+        // var num2 =20;
+        // var num3 = num1-- + num2;
+
+        // var num4 = num1 + num2;
+        // console.log(num3);
+        // console.log(num4);
+
+
+
+
+      //   var a = 2
+      //  a-- // a = a-1'
+
+      //   // --a // a = a-1
+
+      //   console.log(a)
+
+        // <!-- Q-13 -->
+
+        // var result1 = 5- true;
+        // var result4 =5 -""
+        // var result5 =5 -"2"
+        // var result6 =5 - null
+
+
+        // console.log(result1);
+        // console.log(result4);
+        // console.log(result5);
+        // console.log(result6);
+
+        // <!-- Q-13 -->
+
+        // var i = 35
+
+
+        // switch (i) {
+        //     case 25:
+        //     case 35:
+        //         alert("25 or 35");
+        //         break;
+        //     case 45:
+        //         alert("45");
+        //         break;
+        //     default:
+        //         alert("Other");
+        // }
+
+        // ======================================================
+        // 5. Merge Two Sorted array Lists
+
+        //     a = [1, 2, 4, 1100], b = [1, 3, 4, 5, 9];
+
+
+        // function SortArray(a, b) {
+        //     const tmp = [];
+        //     let i = 0;
+        //     let j = 0;
+
+        //     while (i < a.length || j < b.length) {
+
+        //         if (a[i] === undefined) {
+        //             tmp.push(b[j])
+        //             console.log(tmp)
+
+        //             j++;
+        //             continue
+        //         }
+        //         if (b[j] === undefined) {
+        //             tmp.push(a[i])
+
+        //             i++;
+        //             continue
+        //         }
+
+
+        //         if (a[i] <= b[j]) {
+        //             tmp.push(a[i]);
+        //             i++;
+        //         } else {
+        //             tmp.push(b[j]);
+        //             j++;
+        //         }
+        //     }
+        //     return tmp;
+        // }
+
+        // const Result = SortArray(a, b);
+        // console.log(Result);
+
+        // console.log(typeof("2"+2+2))
+        // console.log("2"+(2+2))
+        // // console.log('9'>'11')
+
+        // console.log("tarun" +2)
+        // console.log("tarun"-1)
+        // console.log('tarun' * 2)
+
+
+        // console.log(typeof(100-'5'))
+
+        // console.log('100'-10)
+
+
+        // var a=10;
+        // b=20;
+
+
+        // var c=a
+        // var a=b
+        // var b =c
+        // console.log(a)
+        // console.log(b)
+
+
+        // var z =10
+
+        // console.log(z++)
+        // // z = z+1 = 10+1=11
+        // console.log(z);
+
+        // console.log(++z);
+        // // ++11 = 11+1 = 12
+
+
+        // parameter
+        // arrgument
+        // //
+
+
+        //   function add(arr){
+
+        //     for(let i =0; i<arr.length; i++){
+        //         console.log(arr[i])
+        //     }
+        //   }
+        //   const result = add([10,320,303])
+
+
+
+        // What is Callback-Use For--------------
+
+        //Iteration
+        //Event Handling
+        //Async Operation
+        //Higher order function
+        //Promises
+
+        // function add(x, y) {
+        //     return x + y;
+        // }
+
+        // function Multiply(x, y) {
+        //     return x * y;
+        // }
+
+        // function Minus(x, y) {
+        //     return x - y;
+        // }
+
+
+        // function divide(x, y) {
+        //     return x / y;
+        // }
+
+        // --------------------------------------------//
+
+        //  function display(x, y, callback) {
+        //      console.log(callback(x,y))
+        // }
+
+        // --------------------------------------------//
+
+        // display(10, 5, add)
+
+        // display(10, 5, Multiply)
+
+        // display(10, 5, Minus)
+
+        // display(10, 5, divide)
+
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+        // const number = [1,2,3,4];
+
+        // const sample=(p)=>console.log(p)
+
+
+        // number.forEach(function(x){
+        //     console.log(x)
+        // })
+
+        // number.forEach((x)=>console.log(x))
+
+        // const sample=(p)=>console.log(p)
+
+
+        // number.forEach(sample)//callback
+
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+        //+==== Types of Function in Js========//
+
+        //-----|> & Types of Function........
+
+        //-----|>1. Named Function
+        //-----|>2. Arrow Function
+        //-----|>3. Anonymous Function
+        //-----|>4. Function Expression
+        //-----|>5. Callback Function
+        //-----|>6. IIFE (Immdiatly Invoke function express) Function
+        //-----|>7. Higher order Function
+        //-----|>8. Constructor Function -- A Function constructor is pattern in Javascript based on which we can create several Objects {}.
+
+        //-----|> Constructor Function
+
+        // function Person(name,surname){
+        //     this.name = name,
+        //     this.surname = surname
+        // }
+
+        // const newPerson = new Person("Tarun", "Rudakiya")
+
+        // console.log(newPerson);
+
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+        //====|>  What is  Hoisting in Js -------
+
+        //-----|>  Hoisting is a javascript behavior where functions and variable declarations are moved to the top of their respective scopes the compilation phase.
+
+       
+
+// ---Hoisting-----------We can use  value of variable before declaration that is called Hoisting------------------
+
+
+
+//===----Variable Hoisting---=====\\  
+// x=6;
+// p =1000;
+
+
+// var x;
+// console.log(x)
+
+// var p
+// console.log(p)  
+
+// Tarun = "Rudakiya"
+
+// var Tarun;
+// console.log(Tarun)
+
+// i= 1000;
+// myFunc();
+
+
+
+
+
+
+
+// var i;
+// console.log(i)
+
+// function myFunc(){
+//     console.log("Taryh")
+// }
+
+
+  
+//===----Function Hoisting---=====\\    
+
+
+    //    Zero();
+    //    First();
+    //    Second();
+    //    Third();
+      
+
+    //    function First(){
+    //     console.log(1)
+    //    }
+
+    //    function Second(){
+    //     console.log(2)
+    //    }
+       
+    //    function Third(){
+    //     console.log(3)
+    //    }
+
+    //    function Zero(){
+    //     console.log(0)
+    //    }
+
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+        //====|>  Closure in Js==|> Feature of javascript ======//
+
+        //====|> A closure gives you access to an outer function's scopre from an inner function.
+
+        //==> Lexical scope :- Lexical scope is the ability for a function scope to access variable from the parent scope.
+
+        //==> Ex.
+        // function sum1(){
+        //     var a =1
+
+        //     function sum2(){
+        //         console.log(a)
+
+        //     }
+        //     sum2()
+           
+        // }
+        // sum1()
+
+
+           //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+        //====|> Higher Order Function========//
+
+        //====|> This means we can pass functions as arguments to other functions, store functions in variables, and return a function from another function.
+        //====|> Accept a function as an argument..(one or more argumnt)....
+        //====|> Return a function a as result.
+
+        // function CreateAdder(num) {
+        //     return function (x) {
+        //         return x + num
+        //     }
+        // }
+
+
+        //====|> B. Use functions as arguments to other functions:
+
+        // Use as arguments----
+
+        //     function Hello(func) {
+        //         return func();
+        //     }
+
+        //    const result = Hello( ()=>  42 ); // => 42
+
+        //    console.log(result);
+
+          
+      
+
+
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+
+        //====|>  What is Async Operation--------
+
+        //-----|> Async operation are operation that do not block the execution of the code.
+
+        //-----|> setTimeOut is the asyn. function which executes callback function aftera specific period of time.
+
+        //-----|>  Use Of Async Operation --{Mainly use in time Taking tasks} setTimeOut||Promises || Loading Data from Api  || Uploading File  || Animation and Transitions.
+
+        //-----|>  For.Ex....Async operation
+
+        //    console.log("First")
+
+        //    setTimeout(()=>{
+        //     console.log("Second")
+        //    },2000)
+
+        //    console.log("Third")
+
+
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+        //====|>  What is  Promises in Js -------
+
+
+        //-----|>  Promises in JavaScript are a way to handle Asynchronous operations.
+
+        //-----|> Promises are useful in doing Asynchronous Operation and handle the result when the result will be avaliable in future.
+
+        //-----|>  Use of Promises in Real Application - API CALLS || FILE HANDLING || DATA FETCHING || ANIMATIONS AND VISUAL EFFECTS || EVEBT HANDLING
+
+        //-----|> Promise in three types of stage -Pending || Resloved || Rejected.
+
+        // const promise = new Promise((resolve, reject) => {
+
+        // });
+
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+        //====|>  How to implement  Promises in Js -------
+
+        //Create a promise using the Promise Constructor.......
+
+        // const myPromise = new Promise((relsove, reject) => {
+
+        //     setTimeout(() => {
+
+        //         const randomNumber = Math.floor(Math.random() * 10)
+        //         console.log(randomNumber)
+
+        //         if (randomNumber < 5) {
+        //             relsove(`Success: ${randomNumber}`)
+        //         } else {
+        //             reject(`Fail: ${randomNumber}`)
+        //         }
+        //     }, 1000)
+
+
+        // })
+
+        // // Then- catch Method to handle promise
+
+        // myPromise
+        //     .then((result) => {
+        //         console.log(result)
+        //     })
+
+        //     .catch((error) => {
+        //         console.log(error)
+        //     })
+
+
+        //-----------------------------------------------------
+
+        //==== 2 Different Promises......
+
+
+        // function one(){
+        //     return new Promise((resolve)=>{
+        //         setTimeout(()=>{
+        //             resolve(" 1 Operation Done")
+        //         },2000)
+        //     })
+        // }
+
+
+        // function two(){
+        //     return new Promise((resolve)=>{
+        //         setTimeout(()=>{
+        //             resolve(" 2 Operation Done")
+        //         },3000)
+        //     })
+        // }
+
+        // one()
+        // .then((result)=>{
+        //     console.log(result)
+        //     return Two();
+
+        // })
+
+    
+        // .then((result)=>{
+        //     console.log(result)
+
+        //     return two();
+
+        // })
+        
+        // .catch((error)=>{
+        //     console.log(error)
+
+        // })
+        
+
+
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+
+        //====|>  What is Class & Object in Javascript -------
+
+        // let carName = "honda"
+
+        // class Car {
+
+        //     //static Properties...............
+        //     static num = 4;
+
+        //     //Dynamic Properties...............
+
+        //     constructor(model, year) {
+        //         this.model = model;
+        //         this.year = year;
+        //     }
+
+        //     //Method...............
+
+        //     start() {
+        //         console.log(this.model);
+        //     }
+
+        // }
+
+        // const MyCar = new Car('Honda', 2022);
+        
+
+        // console.log(MyCar);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+//========== OOPS In JavaScript=============\\
+
+//----|> Object oriented programming is based on the concept of Object {}.
+
+//----|> Object oriented programming , we represent Real-world entities as in object.
+
+//----|> OOPS was developed with the Goal of Organizing the Code in order to make it more flexible and easier to maintain.
+
+//----|>4 Pillars of OOPS:
+
+//----|>[1] Inheritance
+//----|>[2] Encapsulation
+//----|>[3] Abstraction
+//----|>[4] Polymorphism
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+
+//----|>[1] Inheritance:
+
+// Parent ------------- (Based Class)
+// |
+// |   //Inherit Parent-class 
+// |
+// Child extends Parant ------------- (Derived Class)
+
+// Child class can access Parent class Properties and Methods 
+
+
+// Examples::::::::::::::::::::::::::::::::
+
+// class person {      // Parent Class
+
+//     constructor(name) {
+//         this.name = name;
+//     }
+    
+    
+//     StudentName() {
+//         return (`Name of person: ${this.name}`);
+//     }
+
+// }
+
+// class student extends person {   // Child Class
+
+//     constructor(name, id) {
+//         // super keyword for calling the above (parent) class constructor
+//         super(name);
+//         this.id = id;
+//     }
+
+//     StudentName() {
+//         return (`${super.StudentName()},
+//         Student ID: ${this.id}`);
+//     }
+// }
+// let student1 = new student('Tarun', 7);
+// let student2 = new student('Dhaval', 8);
+// let student3 = new student('Vinit', 8);
+
+
+// student1.StudentName();
+
+// console.log(student1, student2, student3)
+
+
+//++++++++++++Function base+++++++++++++++++++++++++++++//
+
+
+// // Base class or superclass
+// function Animal(name) {
+//   this.name = name;
+// }
+
+// // Method shared by all animals
+// Animal.prototype.speak = function() {
+//   console.log(this.name + ' makes a sound');
+// };
+
+// // Subclass or derived class
+
+// function Dog(name, breed) {
+//   // Call the superclass constructor
+//   Animal.call(this, name);
+//   this.breed = breed;
+// }
+
+// // Inherit from Animal
+// Dog.prototype = Object.create(Animal.prototype);
+
+// // Add a method specific to dogs
+// Dog.prototype.bark = function() {
+//   console.log(this.name + ' barks loudly');
+// };
+
+// // Create instances of the classes
+// const myAnimal = new Animal('Generic Animal');
+// const myDog = new Dog('Buddy', 'Golden Retriever');
+
+// // Call methods
+// myAnimal.speak(); // Output: Generic Animal makes a sound
+// myDog.speak();    // Output: Buddy makes a sound
+// myDog.bark();     // Output: Buddy barks loudly
+
+
+//++++++++++++Class base+++++++++++++++++++++++++++++//
+
+
+// Parent class
+
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   speak() {
+//     console.log(`${this.name} makes a sound`);
+//   }
+
+// }
+
+// // Child class
+
+// class Dog extends Animal {
+
+//   constructor(name, breed) {
+//     super(name); // Call the above parent class constructor
+//     this.breed = breed;
+//   }
+
+//   bark() {
+//     console.log(`${this.name} barks loudly`);
+//   }
+
+// }
+
+// // Create instances of the classes
+// const myAnimal = new Animal('Generic Animal');
+// const myDog = new Dog('Buddy', 'Golden Retriever');
+
+// // Call methods
+// myAnimal.speak(); // Output: Generic Animal makes a sound
+// myDog.speak();    // Output: Buddy makes a sound
+// myDog.bark();     // Output: Buddy barks loudly
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// 2) Encapsulation 
+
+//====|>  Encapsulation is one of the fundamental principles of (OOP) that aims to bundle data (attributes) and the methods (functions) that operate on that data into a single unit, called a class.
+
+
+//++++++++++++Function base+++++++++++++++++++++++++//
+
+// Creating a simple class using constructor function
+
+// function Person(name, age) {
+//   // Private properties (encapsulated)
+
+//   let _name = name; // _name is private
+//   let _age = age;   // _age is private
+
+//   // Public method to get the name------------------------------
+
+//   this.getName = function () {
+//     return _name;
+//   };
+
+//   // Public method to set the name------------------------------
+
+//   this.setName = function (newName) {
+
+//     if (typeof newName === 'string') {
+//       _name = newName;
+//     } else {
+//       console.error('Name must be a string.');
+//     }
+//   };
+
+//   // Public method to get the age------------------------------
+
+//   this.getAge = function () {
+//     return _age;
+//   };
+
+//   // Public method to set the age------------------------------
+
+//   this.setAge = function (newAge) {
+
+//     if (typeof newAge === 'number' && newAge >= 0) {
+//       _age = newAge;
+//     } else {
+//       console.error('Age must be a non-negative number.');
+//     }
+//   };
+
+
+// }
+
+
+// // Create an instance of the Person class
+// const person1 = new Person('John', 30);
+
+// // Accessing and modifying encapsulated data through public methods
+
+// console.log(person1.getName()); // Output: John
+// console.log(person1.getAge());  // Output: 30
+
+// person1.setName('Alice');
+// person1.setAge(25);
+
+// console.log(person1.getName()); // Output: Alice
+// console.log(person1.getAge());  // Output: 25
+
+
+//++++++++++++class base+++++++++++++++++++++++++//
+
+
+// class Person {
+
+//   constructor(name, age) {
+//     // Private properties (encapsulated)
+//     let _name = name; // _name is private
+//     let _age = age;   // _age is private
+
+//     // Public method to get the name------1------
+
+//     this.getName = function () {
+//       return _name;
+//     };
+
+//     // Public method to set the name------2------
+
+//     this.setName = function (newName) {
+//       if (typeof newName === 'string') {
+//         _name = newName;
+//       } else {
+//         console.error('Name must be a string.');
+//       }
+//     };
+
+//     // Public method to get the age------1------
+
+//     this.getAge = function () {
+//       return _age;
+//     };
+
+//     // Public method to set the age------2------
+
+//     this.setAge = function (newAge) {
+//       if (typeof newAge === 'number' && newAge >= 0) {
+//         _age = newAge;
+//       } else {
+//         console.error('Age must be a non-negative number.');
+//       }
+//     };
+//   }
+// }
+
+// // Create an instance of the Person class------------------
+
+// const person1 = new Person('John', 30);
+
+// // Accessing and modifying encapsulated data through public methods
+
+// console.log(person1.getName()); // Output: John
+// console.log(person1.getAge());  // Output: 30
+
+// person1.setName('Alice');
+// person1.setAge(25);
+
+// console.log(person1.getName()); // Output: Alice
+// console.log(person1.getAge());  // Output: 25
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// 2) Abstraction 
+
+//-----|>Abstraction is one of the fundamental (OOP) concepts that helps manage complexity by hiding the complex implementation details of an object and exposing only the necessary functionalities and properties. 
+
+//-----|>Abstraction in JavaScript:
+
+//-----|>Abstraction in JavaScript is the process of defining a class or an object in a way that only relevant details are exposed, while the inner workings and complexities are hidden from the outside world. This is typically done using classes, methods, and access modifiers like public, private, and protected.
+
+//++++++++++++Example+++++++++++++++++++++++++++++++++++++++++++//
+
+// class Shape {
+//   constructor(color) {
+//     this.color = color;
+//   }
+
+//   // Method to set the color of the shape----
+//   setColor(color) {
+//     this.color = color;
+//   }
+
+//   // Method to get the color of the shape-----
+//   getColor() {
+//     return this.color;
+//   }
+
+//   // Method to calculate the area (to be overridden by subclasses)-----
+//   calculateArea() {
+//     return 0;
+//   }
+
+//   // Method to calculate the perimeter (to be overridden by subclasses)-----
+//   calculatePerimeter() {
+//     return 0;
+//   }
+// }
+
+
+
+// class Circle extends Shape {
+//   constructor(color, radius) {
+//     super(color);
+//     this.radius = radius;
+//   }
+
+//   // Override calculateArea method for circles------------------
+
+//   calculateArea() {
+//     return Math.PI * this.radius ** 2;
+//   }
+
+//   // Override calculatePerimeter method for circles---------------
+
+//   calculatePerimeter() {
+//     return 2 * Math.PI * this.radius;
+//   }
+
+// }
+
+
+// class Rectangle extends Shape {
+//   constructor(color, width, height) {
+//     super(color);
+//     this.width = width;
+//     this.height = height;
+//   }
+
+//   // Override calculateArea method for rectangles------------------
+
+//   calculateArea() {
+//     return this.width * this.height;
+//   }
+
+//   // Override calculatePerimeter method for rectangles------------------
+  
+//   calculatePerimeter() {
+//     return 2 * (this.width + this.height);
+//   }
+// }
+
+// const redCircle = new Circle('red', 5);
+
+// console.log(`Color: ${redCircle.getColor()}`);
+// console.log(`Area: ${redCircle.calculateArea()}`);
+// console.log(`Perimeter: ${redCircle.calculatePerimeter()}`);
+
+// console.log('------------------------------------------------')
+
+// const blueRectangle = new Rectangle('blue', 4, 6);
+// console.log(`Color: ${blueRectangle.getColor()}`);
+// console.log(`Area: ${blueRectangle.calculateArea()}`);
+// console.log(`Perimeter: ${blueRectangle.calculatePerimeter()}`);
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// 2) Polymorphism  
+
+
+//=========|>Polymorphism is a concept in object-oriented programming (OOP) that refers to the ability of different objects to respond to the same method or function in a way that is specific to their individual types or classes. In JavaScript, which is a dynamically typed language, polymorphism is achieved through the use of prototypes and inheritance.
+
+//++++++++Function base+++++++++++++++++++++++++++++++++++++++++++++++//
+
+// Define a superclass
+
+// function Animal(name) {
+//   this.name = name;
+// }
+
+// // Add a method to the Animal prototype
+// Animal.prototype.speak = function() {
+//   console.log(this.name + " makes a sound");
+// };
+
+// // Define a subclass that inherits from Animal
+// function Dog(name) {
+//   Animal.call(this, name);
+// }
+
+// // Set up prototype chain for Dog
+
+// Dog.prototype = Object.create(Animal.prototype);
+// Dog.prototype.constructor = Dog;
+
+// // Override the speak method for Dog
+// Dog.prototype.speak = function() {
+//   console.log(this.name + " barks");
+// };
+
+// // Create instances of Animal and Dog
+// var animal = new Animal("Generic Animal");
+// var dog = new Dog("Fido");
+
+// // Call the speak method on both objects
+// animal.speak(); // Output: Generic Animal makes a sound
+// dog.speak();    // Output: Fido barks
+
+
+//++++++++Class base+++++++++++++++++++++++++++++++++++++++++++++++//
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} makes a sound`);
+  }
+}
+
+// Define a subclass (Dog) that extends the superclass (Animal)
+
+class Dog extends Animal {
+
+  constructor(name, breed) {
+    super(name); // Call the superclass constructor
+    this.breed = breed;
+  }
+
+  // Override the speak method-------------------
+
+  speak() {
+    console.log(`${this.name} (a ${this.breed} dog) barks`);
+  }
+
+}
+
+// Create instances of Animal and Dog-------------------
+
+const genericAnimal = new Animal("Generic Animal");
+const fido = new Dog("Fido", "Golden Retriever");
+
+// Call the speak method on both objects----------------------
+
+genericAnimal.speak(); // Output: Generic Animal makes a sound
+fido.speak();          // Output: Fido (a Golden Retriever dog) barks
+
+
+
+//--------------------------------------------------------------------------------------------------------------------//
+// This demonstrates how JavaScript's class-based inheritance and method overriding allow objects of different classes to respond to the same method name in a way that is appropriate for their specific types, which is a fundamental aspect of polymorphism.
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

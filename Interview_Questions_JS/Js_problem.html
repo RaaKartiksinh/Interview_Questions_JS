@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Problem Solving</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Q-1======|>
+
+
+        // let age = 32;
+
+        // if(age<=10){
+        // alert("sorry, Your age is low....")
+        // }else if(age >=18){
+        //     alert('Good!...You are eligible');
+
+        //     if(age<=35){
+        //     alert('You are not eligible for exam');
+        // }
+        // }
+
+
+        // Q-2======|>Conditional Statements: Write a program that checks if a number is even or odd.
+
+        // let num = 100;
+
+        // if(num%2===0){
+        //     console.log("even")
+        // }else{
+        //     console.log("odd")
+        // }
+
+        // console.log(num)
+
+        // Q-3======|>Functions: Create a function that calculates the square of a number.
+
+        // function SquareRoot(a){
+        //     return a*a
+        // }
+
+        // const result = SquareRoot(10)
+        // console.log(result)
+
+        // Q-4======|>Arrays: Declare an array and perform operations like adding elements, removing elements, and accessing elements.
+
+        // const fruit = ["Banana", "mango", "Apple"]
+
+        // // For adding method--------
+        // fruit.unshift("Sapotta")
+        // fruit.push("Gauva", "pineapple")
+
+        // // For removing method--------
+        // fruit.shift(1)
+        // fruit.pop(1)
+
+        // console.log(fruit)
+
+        // Q-5======|> Object Destructure
+
+        // let person = {
+        //     name: "Tarun",
+        //     age: 21
+        // };
+
+        // const { name, age } = person
+
+        // console.log(name);
+        // console.log(age);
+
+        // Q-6======|>String Manipulation: Manipulate strings, such as concatenating them and finding their length.
+
+        // let firstName = "Tarun";
+        // let lastName = "Rudakiya";
+
+        // let fullName = firstName + " " + lastName;
+        // console.log(fullName);
+        // console.log(fullName.length);
+        // console.log(typeof(fullName));
+        // console.log(fullName.toUpperCase());
+
+        // Q-7======|>Arrays and Loops: Iterate through an array and perform actions on its elements.
+
+        // let numbers = [1, false, 2, 3, "Rahul", 4, 5, 100, "Dhaval", 9, 90, 30, 23, 3, 21, 22, 34, true, 43, 44, 3, 55, 33, 5665, 44, true, 10, 23, 322, 3, 444, "tarun", "Vinit"];
+
+        // let even = [];
+        // let odd = [];
+        // let Words = [];
+        // let Bolean = [];
+
+
+        // for (let i = 0; i < numbers.length; i++) {
+
+        //     let result = numbers[i];
+
+        //     if (typeof result === 'number') {
+        //         if (result % 2=== 0) {
+        //             even.push(result)
+        //         } else {
+        //             odd.push(result)
+        //         }
+        //     } else if (typeof result === 'string') {
+        //         Words.push(result)
+        //     } else
+        //         Bolean.push(result)
+
+        // }
+
+        // console.log(`Even Number is = ${even}`)
+        // console.log(`Even Number is = ${odd}`)
+        // console.log(`Strings = ${Words}`)
+        // console.log(`Boolean = ${Bolean}`)
+
+
+        // Q-7======|>Sum of Array Elements: Write a function to calculate the sum of all elements in an array.
+
+
+        //    function Sum(a){
+        //    let total= 0;
+
+        //     for(let i =0; i<a.length; i++){
+        //         total+= a[i]
+        //     }
+
+        //     return total;
+        //    }
+
+        //    const result= Sum([10,20,30,20,300,100])
+        //    console.log(result)
+
+
+
+        // Q-8 ======|>Find Maximum and Minimum: Create a function to find the maximum and minimum values in an array.
+
+
+        // function findMaxMin(arr) {
+
+        //     let max =arr[0];
+        //     let min = arr[0];
+
+        //     for (let i = 0; i < arr.length; i++) {
+
+        //         if (arr[i] > max ) {
+        //             max = arr[i];
+
+        //         } else if (arr[i] < min) {
+
+        //             min = arr[i];
+        //         }
+        //     }
+
+        //     return { max, min };
+
+        // }
+
+
+
+        // const result = findMaxMin([3, 100, 2, 9, 12, 1023]);
+        // console.log("Maximum:", result.max);
+        // console.log("Minimum:", result.min);
+
+        // ===================================================
+        // function findMaxMin( arr) {
+        //     const maxVal = Math.max(...arr);
+        //     const minVal = Math.min(...arr);
+        //     return [maxVal, minVal];
+        // }
+
+
+        // const myArray = [12, 45, 7, 23, 1000, 98, 56];
+        // const result = findMaxMin(myArray);
+        // console.log(result)
+
+
+        // Q-9 ======|>Remove Duplicates: Write a function that removes duplicate values from an array.
+
+        // function Remove(arr) {
+        //         let tmp =[];
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         let num = arr[i];
+
+        //         if(tmp.indexOf(num)===-1){
+        //             tmp.push(num)
+        //         }
+
+        //     }
+
+        //     return tmp;
+
+        // }
+        // const result = Remove([1, 3, 2, 3, 5, 7, 8, 9, 5, 10, 23, 43, 44, 5, 23, 3, 44, 5, 6, 200])
+
+        // console.log(result)
+
+        // ===================================================
+
+        // function Remove(arr) {
+
+        //     let tmp=[];
+
+
+        //     for (let i = 0; i < arr.length; i++) {
+
+        //         if(!tmp.includes(arr[i])){
+        //             tmp.push(arr[i])
+        //         }
+
+        //     }
+        //     return tmp;
+
+        // }
+        // const result = Remove([1, 3, 2, 4, 2, 5, 6, 1, 7, 9, 7, 8, 88, 843, 10])
+        // console.log(result);
+
+
+        // Q-10 ======|>Reversing an Array: Implement a function that reverses the order of elements in an array.
+
+        //   function Reverse(arr){
+
+        //     let tmp =[];
+
+        //     for(let i = arr.length -1; i>=0; i--){
+        //         tmp.push(arr[i]);
+        //     }
+
+        //     return tmp;
+        //   }
+
+        //   const result= Reverse([1,2,3,4,5,6,7,8,9,10]);
+        //   console.log(result);
+
+
+        // Q-11 ======|>Finding an Element: Create a function that finds the index of a specific element in an array.
+
+        // function FindIndex(arr){
+
+        //     var num= 7;
+
+        //     for(let i=0; i<arr.length; i++){
+        //      if(arr[i]=== num){
+        //         return i
+        //      }
+        //     }
+        //     return "Sorry Num is not avalible from array"
+        // }
+
+        // const Result = FindIndex([1,2,3,4,5,6,7,8,9,10])
+        // console.log(Result);
+
+
+        // Q-12 ======|>Sorting: Sort an array of numbers in ascending and descending order.
+
+        // ======|>Asending Order~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:
+
+        // function SortedArray(arr){
+        //     for(let i =0; i<arr.length; i++){
+
+        //         for(let j =0; j<arr.length; j++){
+
+        //             if(arr[j]>arr[j+1]){
+        //               [arr[j],arr[j+1]]= [arr[j+1],arr[j]]
+        //             }
+        //         }
+
+        //     }
+        //     return arr;
+        // }
+        // const result =SortedArray([1,6,4,73,10,40,2,44,3,23])
+
+        // console.log(result)
+
+        // ====================================================================
+
+        // ======|>Desending Order~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:
+
+        // function SortedArray(arr) {
+        //     for (let i = 0; i < arr.length; i++) {
+
+        //         for (let j = 0; j < arr.length; j++) {
+        //             if (arr[j] < arr[j + 1]) {
+        //                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+        //             }
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // const result = SortedArray([1, 100, 2, -1, 6, 4, 73, 10, 40, 2, 44, 3, 23])
+
+        // console.log(result);
+
+// let target = 10;
+// let Result =[]
+
+// for(let i =0; i <nums.length; i++){
+
+//     for(let j= i+1; j<nums.length; j++){
+//         if(nums[i] + nums[j]=== target){
+//             Result.push(i,j)
+//         }
+//     }
+// }
+// console.log(Result)
+
+
+        // Q-13 ======|>Merging Arrays: Write a function to merge two arrays into a single sorted array.
+
+
+
+        // a = [1, 2, 4, 10, 20, 44], b = [1, 3, 4, 5, 9, 1002];
+
+
+        // function SortArray(a, b) {
+        //     let i = 0;
+        //     let j = 0;
+        //     let Newarr = [];
+
+        //     while (i < a.length || j < b.length) {
+
+        //         let mrg = a.concat(b);
+        //         Newarr.push(mrg);
+        //         return Newarr;
+        //         i++;
+        //         j++;
+
+        //     }
+
+        //     for (let i = 0; i < Newarr.length; i++) {
+        //         if (Newarr[i] < Newarr[i + 1]) {
+        //            [ Newarr[i], Newarr[i+1]] = [Newarr[i+1], Newarr[i]]
+
+        //         }
+        //     }
+        //     return Newarr;
+
+
+        //     //     if (a[i] === undefined) {
+        //     //         tmp.push(b[j])
+        //     //         console.log(tmp)
+
+        //     //         j++;
+        //     //         continue
+        //     //     }
+        //     //     if (b[j] === undefined) {
+        //     //         tmp.push(a[i])
+
+        //     //         i++;
+        //     //         continue
+        //     //     }
+
+        //     //     if (a[i] <= b[j]) {
+        //     //         tmp.push(a[i]);
+        //     //         i++;
+        //     //     } else {
+        //     //         tmp.push(b[j]);
+        //     //         j++;
+        //     //     }
+        //     // }
+        //     // return tmp;
+        // }
+
+        // const Result = SortArray(a, b);
+        // console.log(Result);
+
+
+
+
+        // a = [1, 2, 4, 11], b = [1, 3, 4, 5, 9];
+
+
+        // function SortArray(a, b) {
+        //     const tmp = [];
+        //     let i = 0;
+        //     let j = 0;
+
+        //     while (i < a.length || j < b.length) {
+
+        //         if (a[i] === undefined) {
+        //             tmp.push(b[j])
+        //             console.log(tmp)
+
+        //             j++;
+        //             continue
+        //         }
+        //         if (b[j] === undefined) {
+        //             tmp.push(a[i])
+
+        //             i++;
+        //             continue
+        //         }
+
+
+        //         if (a[i] <= b[j]) {
+        //             tmp.push(a[i]);
+        //             i++;
+        //         } else {
+        //             tmp.push(b[j]);
+        //             j++;
+        //         }
+        //     }
+        //     return tmp;
+        // }
+
+        // const Result = SortArray(a, b);
+        // console.log(Result);
+
+
+
+
+
+
+        // function sorted(nums) {
+        //     let result;
+        //     for (let num of nums) {
+        //         result ^= num;
+        //     }
+        //     return result;
+        // }
+
+
+        // const result = sorted([4,5,33,5,4,1, 2, 1, 2])
+        // console.log(result);
+
+        console.log(typeof ("2" + 10))
+        console.log(typeof (2 + '10'))
+        console.log(typeof ("2" + 2 + 2))
+        console.log(typeof (+2 + "2"))
+        console.log(typeof (2 * "2"))
+        console.log(typeof (100 - "5"))
+        console.log(typeof ("5" - 2))
+        console.log(typeof ("10" / 2))
+        console.log(("10" / 2))
+        console.log((10 / "2"))
+        console.log("tarun" + 2)
+        console.log(200 + "hello")
+
+        console.log("----------------------")
+
+        console.log('7' > '10');
+
+        // console.log(9 > "11")
+
+        // console.log(11-'11')
+
+
+
+
+        // var a=10;
+
+        // function sum() {
+        //    if(a){
+
+        //     const person={
+        //         name:"vishal"
+        //     }
+        
+        //    }
+           
+
+        // }
+
+        // sum()
+
+        
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
